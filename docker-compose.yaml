@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  app:
+    image: lucasferreirasantos/api-mongo-front:0.1.0
+    ports:
+      - 80:80
+    container_name: nginx-front
+    environment:
+      - NGINX_HOST=foobar.com
+      - NGINX_PORT=80
+    volumes:
+      - .:/usr/share/nginx/html
+    networks:
+      - nginx
+networks:
+
+  nginx:
+    driver: bridge
