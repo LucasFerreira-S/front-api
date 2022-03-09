@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 45;
+    }
+    img{
+        width: 60%;
+    }
+    body{
+   background-image: none;
+   background-color: rgb(38, 160, 231);
+  }
+
+}

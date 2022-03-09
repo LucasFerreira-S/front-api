@@ -4,7 +4,7 @@
     box-sizing: 0;
 }
 body{
-    background-image: url(fundo.jpg);
+    background-image: url("../img/fundo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
@@ -45,33 +45,33 @@ main {
 form h1{
     color: rgb(0, 0, 0);
 }
-.inputs i{
+.form i{
     position: absolute;
     padding-top: 5px;
     margin-left: 7px;
     font-size: 20px;
     color: #000000;
 }
-.inputs {
+.email-info, .senha-info,.nome-info {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.inputs input {
+.form input {
   border: 0;
   padding: 5px;
   border: 2px solid black;
   border-radius: 20px;
   outline: 0;
 }
-.inputs input[type = email]{
+.form input[type = email]{
     padding-left: 35px;
 }
-.inputs input[type=password]{
+.form input[type=password]{
     padding-left: 35px;
 }
-.inputs input[type=text]{
+.form input[type=text]{
     padding-left: 35px;
 }
 .form button {
