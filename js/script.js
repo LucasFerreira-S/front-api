@@ -12,7 +12,6 @@ let NomeCadastroV = "";
 
 const formLogin = document.querySelector("#form-login")
 const formCad = document.querySelector("#cadastro")
-
 const linkCadastro = document.querySelector(".cadastre-se")
 const linkLogin = document.querySelector(".link-login")
 EmailLogin.addEventListener('change',(e)=>{
@@ -75,7 +74,7 @@ const login = async (e) => {
       return
     }
     localStorage.setItem('token', data.token)
-    alert('login success')
+    alert(`Bem vindo`)
   } catch (error) {
     alert('error')
   }

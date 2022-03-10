@@ -3,7 +3,7 @@ version: '3'
 services:
 
   app:
-    image: lucasferreirasantos/api-mongo-front:0.1.0
+    build: .
     ports:
       - 80:80
     container_name: nginx-front
@@ -14,6 +14,7 @@ services:
       - .:/usr/share/nginx/html
     networks:
       - nginx
+    
 networks:
 
   nginx:
